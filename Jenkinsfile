@@ -11,6 +11,7 @@ pipeline{
 					docker.withRegistry('','dockerhub') {
 						def myImage = docker.build("jcivitell/garrysmod:${env.BUILD_ID}")
 						myImage.push()
+						myImage.push('latest')
 					}
 				}
 			}
