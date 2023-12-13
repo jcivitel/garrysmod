@@ -28,9 +28,13 @@ RUN set -x \
 FROM build_stage AS bullseye-base
 
 ENV GM_SERVERNAME="New \"${STEAMAPP}\" Server" \
-    GM2_PORT=27015 \
+    GM_PORT=27015 \
     GM_PW="changeme" \
+	GM_MAXPLAYERS=10 \
     GM_LOCATION="eu" \
+	GM_GAMEMODE="terrortown" \
+	GM_WORKSHOP="" \
+	GM_MAP="" \
     GM_STEAMTOKEN="changeme"
 
 

@@ -13,11 +13,14 @@ cd "${STEAMAPPDIR}"
 
 # Start Server
 ./srcds_run -game garrysmod \
-	-port "${GM2_PORT}" \
+	-port "${GM_PORT}" \
 	-console \
 	-usercon \
-	-maxplayers "${GM2_MAXPLAYERS}" \
+	-maxplayers "${GM_MAXPLAYERS}" \
 	+sv_password "${GM_PW}" \
  	+hostname "${GM_SERVERNAME}" \
+	+gamemode "${GM_GAMEMODE}" \
+	+host_workshop_collection "${GM_WORKSHOP}" \
+	+map "${GM_MAP}" \
 	+sv_setsteamaccount "${GM_STEAMTOKEN}" \
     +sv_location "${GM_LOCATION}"

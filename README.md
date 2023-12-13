@@ -36,6 +36,10 @@ Feel free to overwrite these environment variables, using -e (--env):
 GM_SERVERNAME="changeme"   (Set the visible name for your private server)
 GM_PORT=27015              (GM server listen port tcp_udp)
 GM_PW="changeme"           (GM server password)
+GM_MAXPLAYERS=10           (Max Players)
+GM_GAMEMODE="terrortown"   (Set the Gamemode to terrortown)
+GM_WORKSHOP=""             (Option to load a workshop collection)
+GM_MAP=""                  (Option to set start map)
 GM_LOCATION=eu             (Country Flag)
 GM_STEAMTOKEN="changeme"   (GSLT-Key https://steamcommunity.com/dev/managegameservers)
 ```
