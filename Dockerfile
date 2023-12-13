@@ -6,7 +6,7 @@ FROM cm2network/steamcmd:root as build_stage
 LABEL maintainer="jan@civitelli.de"
 
 ENV STEAMAPPID 4020
-ENV STEAMAPP GM
+ENV STEAMAPP gm
 ENV STEAMAPPDIR "${HOMEDIR}/${STEAMAPP}-dedicated"
 
 COPY etc/entry.sh "${HOMEDIR}/entry.sh"
