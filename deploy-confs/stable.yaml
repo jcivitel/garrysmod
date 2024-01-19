@@ -14,7 +14,7 @@ spec:
         app: garrysmod
     spec:
       containers:
-      - image: jcivitell/garrysmod:latest
+      - image: jcivitell/garrysmod:6
         name: garrysmod
         ports:
         - containerPort: 27015
