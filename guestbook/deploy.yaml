@@ -6,8 +6,6 @@ spec:
   sources:
   - repoURL: 'https://github.com/jcivitel/garrysmod'
     targetRevision: master
-  - repoURL: 'https://github.com/jcivitel/garrysmod'
-    targetRevision: dev
   selector:
     matchLabels:
       app: garrysmod
