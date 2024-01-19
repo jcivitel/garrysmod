@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: garrysmod
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: garrysmod
+  template:
+    metadata:
+      labels:
+        app: garrysmod
+    spec:
+      containers:
+      - image: jcivitell/garrysmod:latest
+        name: garrysmod
+        ports:
+        - containerPort: 27015
