@@ -8,6 +8,9 @@ spec:
     targetRevision: master
   - repoURL: 'https://github.com/jcivitel/garrysmod'
     targetRevision: dev
+  selector:
+    matchLabels:
+      app: garrysmod
   replicas: 1
   revisionHistoryLimit: 3
   template:
