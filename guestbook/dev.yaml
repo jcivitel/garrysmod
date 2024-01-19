@@ -1,0 +1,23 @@
+ apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: garrysmod
+spec:
+  sources:
+ - repoURL: 'https://github.com/jcivitel/garrysmod'
+    targetRevision: dev
+  selector:
+    matchLabels:
+      app: garrysmod
+  replicas: 1
+  revisionHistoryLimit: 3
+  template:
+    metadata:
+      labels:
+        app: garrysmod
+    spec:
+      containers:
+      - image: jcivitell/garrysmod:latest
+        name: garrysmod
+        ports:
+        - containerPort: 27015
