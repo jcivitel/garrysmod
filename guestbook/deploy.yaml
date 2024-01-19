@@ -3,11 +3,13 @@ kind: Deployment
 metadata:
   name: garrysmod
 spec:
+  sources:
+  - repoURL: 'https://github.com/jcivitel/garrysmod'
+    targetRevision: master
+  - repoURL: 'https://github.com/jcivitel/garrysmod'
+    targetRevision: dev
   replicas: 1
   revisionHistoryLimit: 3
-  selector:
-    matchLabels:
-      app: garrysmod
   template:
     metadata:
       labels:
