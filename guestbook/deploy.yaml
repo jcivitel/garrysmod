@@ -3,9 +3,6 @@ kind: Deployment
 metadata:
   name: garrysmod
 spec:
-  sources:
-  - repoURL: 'https://github.com/jcivitel/garrysmod'
-    targetRevision: master
   selector:
     matchLabels:
       app: garrysmod

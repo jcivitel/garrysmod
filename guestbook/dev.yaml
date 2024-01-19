@@ -3,9 +3,6 @@ kind: Deployment
 metadata:
   name: garrysmod-dev
 spec:
-  sources:
-  - repoURL: 'https://github.com/jcivitel/garrysmod'
-    targetRevision: dev
   selector:
     matchLabels:
       app: garrysmod-dev
@@ -17,7 +14,7 @@ spec:
         app: garrysmod-dev
     spec:
       containers:
-      - image: jcivitell/garrysmod:latest
+      - image: jcivitell/garrysmod:2
         name: garrysmod-dev
         ports:
         - containerPort: 27015
