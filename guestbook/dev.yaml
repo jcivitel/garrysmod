@@ -4,7 +4,7 @@ metadata:
   name: garrysmod
 spec:
   sources:
- - repoURL: 'https://github.com/jcivitel/garrysmod'
+  - repoURL: 'https://github.com/jcivitel/garrysmod'
     targetRevision: dev
   selector:
     matchLabels:
