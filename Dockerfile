@@ -3,7 +3,7 @@
 ###########################################################
 FROM cm2network/steamcmd:root as build_stage
 
-MAINTAINER jan@civitelli.de
+LABEL maintainer="jan@civitelli.de"
 
 ENV STEAMAPPID 4020
 ENV STEAMAPP gm

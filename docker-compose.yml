@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  garrysmod:
+    image: jcivitell/garrysmod
+    build:
+      context: .
+      dockerfile: Dockerfile
+      tags:
+      - "jcivitell/garrysmod:${CIRCLE_BRANCH:-master}"
+      - "jcivitell/garrysmod:${CIRCLE_TAG:-latest}"
